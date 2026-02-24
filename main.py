@@ -14,6 +14,19 @@ elif n1 == 5:
     cuanto = 5
 elif n1 == 6:
     cuanto = 6
-print(cuanto)
+
+momento_angular = []
+
+while cuanto > 0:
+    momento_angular.append(cuanto-1)
+    cuanto = cuanto - 1
+
+momento_magnetico = []
+for i in momento_angular:
+    for j in range(-i, i+1):
+        momento_magnetico.append(j)
         
-    
+
+print("El numero cuantico principal es: ", n1)
+print("El numero cuantico del momento angular es: ", momento_angular)
+print("El numero cuantico del momento magnetico es: ", momento_magnetico)
